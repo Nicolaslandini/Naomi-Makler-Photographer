@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naomi Mekler - Welcome</title>
+    
+    <!-- CSS - Titulo - Bootstrap - JS - FontAwesome --> 
+    
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/whatsapp.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+       
+  </head>
+  
+  <body>
+
+    <!-- Comienza pagina inicio --> 
+    <div class="container_principal">
+      <div class="encabezado">
+        <h1 class="titulo-1">Naomi Mekler | Photographer</h1>
+        <p>Retratos cinematográficos para momentos romanticos modernos</p>
+      </div>
+      <div class="desplaza_header">
+        <p>Desplazar para comenzar <br>
+          ↓</p>
+        
+      </div>
+    </div>  
+      <!-- final pagina inicio --> 
+    <header>           
+      <!-- Comienza menu responsive --> 
+      <div class="container_nav">
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+          <span id="menu-abrir">&#9776;</span>
+          <span id="menu-cerrar">X</span>
+        </label>
+
+        <nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about_me">ACERCA DE MI</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#precios">PRECIOS Y PAQUETES</a></li>
+            <li><a href="#formulario">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Termina menu responsive -->
+    <main>
+
+      <!-- About me -->
+      <section id="about_me">
+        
+        <div class="inicio_about_me">
+          <h2 id="titulo_About">Escapa de lo ordinario</h2>
+          <p>Creación de arte, contando tu historioa a travéz de retratos con un estilo cinematográfico y estilizado.  </p>
+        </div>
+        <div class="articulos_about_me">
+          <img class="about_me_img" src="img/About_me_1.jpg" alt="descripcion1">
+         
+        </div>
+        <div class="descripcion_about_me">
+          
+          <p class="pAbout">Desde 2011 innovando, adaptondo resultados a base de solicitudes del cliente. <br> con base en Buenos Aires, Argentina</p>
+        </div>
+
+        <div class="logo">
+          <img class="logo_img" src="./img/logo_escritorio 1.png" alt="logo">
+        </div>
+      </section>
+       
+      <!-- Portfolio -->  
+
+     <section id="portfolio">
+        <h2>EL ESPACIO</h2>
+        <p>ENTRA EN MI MUNDO →</p>
+        <div class="carrousel">
+            <div class="grande">
+              <img src="./img/carrusel (0).jpg" alt="Imagen 1" class="img">
+              <img src="./img/carrusel (3).jpg" alt="Imagen 2" class="img">
+            </div>
+  
+          <ul class="puntos">
+              <li class="punto activo"></li>
+              <li class="punto"></li>
+          </ul>
+        </div>
+      </section>
+        
+     <!-- Precios y paquetes -->
+     
+      <section id="precios">
+        <div class="titulo_precios">
+          <h2>Propuestas</h2>
+          <p>Precios y paquetes</p>
+        </div>
+        <div class="container_precios">
+          <div class="card">
+            <img src="./img/carrusel (4).jpg" alt="">
+            <h4>Paquetes</h4>
+            <p>Las colecciones de boda van desde <br> u$s 800-1600.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./img/carrusel (1).jpg" alt="">
+            <h4>Exclusividad</h4>
+            <p>Disponible en todo el mundo, sin tarifa de viaje a lugares dentro de los 1200 kilometros.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./img/home-1.webp" alt="">
+            <h4>Compromiso</h4>
+            <p>Compromiso y aniversario: tarifa de sesión con descuento del 25 % con la colección de bodas reservada.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulario  class="section__form  !--> 
+
+      <section class="form__principal container-fluid p-0" id="formulario">
+        <h3>Contacto</h3>
+        <div class="form__container wow animate__animated animate__slideInRight" id="formularioSecundario">
+            <form id="form" action="https://formspree.io/f/mvoyrzyk" method="POST" class="section__form">
+              <label for="name">Nombre Completo <span>*</span></label>
+              <input name="name" required type="text" id="name" placeholder="Nombre">
+              
+              <label for="Asunto">Asunto <span></span></label>
+              <input name="Asunto" required type="text" id="Asunto" placeholder="Asunto">
+              
+              <label for="email">Correo electrónico<span>*</span></label>
+              <input name="email" type="text" id="email" required placeholder="nombre@gmail.com">
+              
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" id="" rows="10" cols="40"></textarea>
+              
+              <button id="botonenviar" type="submit" class="button__enviar">Enviar</button>
+            </form>
+            <a href="mailto:nicolas.landini@hotmail.com" id="idform"></a>
+         </div>  
+      </section>
+    </main>   
+    
+    <footer id="mainfooter">
+
+      <div class="box__footer">
+        <h2>Redes Sociales</h2>
+        <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+        <a href="https://www.linkedin.com/in/nicolas-nahuel-landini-40359753/"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a href="#"><i class="fab fa-tumblr-square"></i>Tumblr</a>
+      </div>  
+      <div class="box__copyright">
+        <hr>
+        <p>Todos los derechos reservados © 2022 <b>Nicolas Landini </b></p>
+      </div> 
+    </footer>
+    
+    <!-- WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=591165999665&text=Hola!%20Por%20favor%20deja%20tu%20consulta,%20en%20breve%20sera%20contestado" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+
+    <!-- JavaScript -->
+    <script defer src="js/app.js" ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+    
