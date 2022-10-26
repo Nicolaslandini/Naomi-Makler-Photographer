@@ -38,11 +38,26 @@ html,body{
   
 
 }
+@keyframes movimiento
+{
+	from
+	{
+		
+		font-size: 0px;
+	}
+	to {
+		
+		font-size: auto;
+	}
+}
 
 .encabezado{
   padding-top: 5%;
 }
 
+.encabezado h1{
+  animation: movimiento 2s;
+}
 .desplaza_header{
   
   padding-top: 80%;
@@ -104,18 +119,24 @@ nav{
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   
+  
 }
+
+
 
 .logo{
   display: flex;  
   justify-content: center;
   padding-bottom: 5%;
-
 }
+  
+  
+
 
 .logo_img{
   width: 50%;
-
+ 
+  
 }
 
 .about_me_img{
@@ -252,6 +273,7 @@ nav{
   margin-right: 5%;
   padding-bottom: 8%;
   
+  
 }
 
 .container_precios {
@@ -273,6 +295,7 @@ nav{
   margin: 20px;
   text-align: center;
   transition: all 0.25;
+  
   
   
 
@@ -447,6 +470,10 @@ footer{
   .encabezado{
     padding-top: 20%;
   }
+  .encabezado h1{
+  animation: movimientoEscritorio 2s;
+
+  }
   .desplaza_header{
     margin-top: 100%;
     font-size: 13px;
@@ -460,6 +487,18 @@ footer{
   
 }
 
+@keyframes movimientoEscritorio
+{
+	from
+	{
+		
+		font-size: 70px;
+	}
+	to {
+		
+		font-size: auto;
+	}
+}
 
 /* Media Querys menu */
 

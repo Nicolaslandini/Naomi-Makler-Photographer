@@ -51,6 +51,46 @@ punto.forEach( ( cadaPunto , i )=> {
     })
 })
 
+var nombre = document.getElementById('name')
+var email = document.getElementById('email')
+var mensaje = document.getElementById('message')
+
+function validar(){
+  validarNombre(nombre)
+  validarEmail(email)
+  validarMensaje(mensaje)
+}
+
+
+
+  function validarNombre(nombre) {
+
+    if (nombre.value == "") {
+      alert("Escriba su nombre")
+     }
+   }
+    
+        
+  function validarEmail(email) {
+    var mailformat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+    if (!email.value.match(mailformat)) {
+      alert("Por favor ingrese un email valido");
+    }
+  }
+ 
+        
+    function validarMensaje(mensaje) {
+      if (mensaje.value == "") {
+       alert("Escriba su mensaje")
+      }
+    }
+
+      
+      
+  
+
+
+
 
 
 
