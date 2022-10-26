@@ -1,29 +1,3 @@
-//Funcion Formulario
-const $form = document.querySelector('#form')
-$form.addEventListener('submit', handleSubmit)
-
-async function handleSubmit(event) {
-  event.preventDefault()
-  const form = new FormData(this)
-  const response = await fetch(this.action, {
-    method: this.method,
-    body:form,
-    headers:{
-      'Accept': 'application/json'      }
-  })
-
-  if(response.ok){
-    this.reset()
-    swal({
-      title: "Tu mensaje fue enviado!",
-      text: "Gracias por contactarte, nos comunicaremos con vos lo mas pronto posible.",
-      icon: "success",
-    });
-    
-  }
-}
-
-
 const grande= document.querySelector('.grande')
 const punto= document.querySelectorAll('.punto')
 
@@ -51,6 +25,36 @@ punto.forEach( ( cadaPunto , i )=> {
     })
 })
 
+
+//Funcion Formulario
+const $form = document.querySelector('#form')
+$form.addEventListener('submit', handleSubmit)
+
+async function handleSubmit(event) {
+  event.preventDefault()
+  const form = new FormData(this)
+  const response = await fetch(this.action, {
+    method: this.method,
+    body:form,
+    headers:{
+      'Accept': 'application/json'      }
+  })
+
+  if(response.ok){
+    this.reset()
+    swal({
+      title: "Tu mensaje fue enviado!",
+      text: "Gracias por contactarte, nos comunicaremos con vos lo mas pronto posible.",
+      icon: "success",
+    });
+    
+  }
+}
+
+
+
+// Validacion de formulario 
+
 var nombre = document.getElementById('name')
 var email = document.getElementById('email')
 var mensaje = document.getElementById('message')
@@ -62,24 +66,20 @@ function validar(){
 }
 
 
-
-  function validarNombre(nombre) {
-
+ function validarNombre(nombre) {
     if (nombre.value == "") {
       alert("Escriba su nombre")
-     }
-   }
-    
-        
+    }
+  }
+           
   function validarEmail(email) {
     var mailformat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
     if (!email.value.match(mailformat)) {
       alert("Por favor ingrese un email valido");
     }
-  }
+  }       
  
-        
-    function validarMensaje(mensaje) {
+  function validarMensaje(mensaje) {
       if (mensaje.value == "") {
        alert("Escriba su mensaje")
       }
